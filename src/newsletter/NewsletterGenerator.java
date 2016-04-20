@@ -44,16 +44,15 @@ public class NewsletterGenerator
   {
     vgerDS = new DriverManagerDataSource();
     vgerDS.setDriverClassName( "oracle.jdbc.OracleDriver" );
-    //vgerDS.setUrl( "jdbc:oracle:thin:@//ils-db-prod.library.ucla.edu:1521/VGER.VGER" );
-    vgerDS.setUrl( "jdbc:oracle:thin:@ils-db-prod.library.ucla.edu:1521:VGER" );
-    vgerDS.setUsername( "VGER_SUPPORT" );
-    vgerDS.setPassword( "VGER_SUPPORT_PWD" );
+    vgerDS.setUrl( "url" );
+    vgerDS.setUsername( "user" );
+    vgerDS.setPassword( "pwd" );
 
     qdbDS = new DriverManagerDataSource();
     qdbDS.setDriverClassName( "com.microsoft.sqlserver.jdbc.SQLServerDriver" );
-    qdbDS.setUrl( "jdbc:sqlserver://obiwan.qdb.ucla.edu:1433" );
-    qdbDS.setUsername( "mgrlib" );
-    qdbDS.setPassword( "srKard21" );
+    qdbDS.setUrl( "url" );
+    qdbDS.setUsername( "usr" );
+    qdbDS.setPassword( "pwd" );
   }
 
   private static void getVger()
