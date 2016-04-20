@@ -16,9 +16,9 @@ public class Class1
 
     vgerDS = new DriverManagerDataSource();
     vgerDS.setDriverClassName( "oracle.jdbc.OracleDriver" );
-    vgerDS.setUrl( "jdbc:oracle:thin:@ils-db-prod.library.ucla.edu:1521:VGER" );
-    vgerDS.setUsername( "VGER_SUPPORT" );
-    vgerDS.setPassword( "VGER_SUPPORT_PWD" );
+    vgerDS.setUrl( "url" );
+    vgerDS.setUsername( "user" );
+    vgerDS.setPassword( "PWD" );
 
     result = 
         new JdbcTemplate( vgerDS ).queryForObject( "select vger_support.test_590( 1855202 ) from dual", 
